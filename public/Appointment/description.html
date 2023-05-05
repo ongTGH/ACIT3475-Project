@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
-      maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Appointment Reminder</title>
-    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> 
+    <title>Add Appointment Description</title>
 </head>
-
 <body>
     <div class="appointment-logo">
-        <img src="../images/PetPal.png" alt="logo" style="max-width: 100%" />
+        <img src="../images/PetPal.png" alt="logo" />
     </div>
+
     <div class="loginbox">
-        <h1 class="appointment-header">Set Up An Appointment Time</h2>
-    </div>
+    <h1 class="appointment-header">Set Up An Appointment Time</h1>
+    <form>
+        <label for="appointment-description">Appointment Description:</label>
+        <textarea id="appointment-description" name="appointment-description" rows="15">Enter a description...</textarea>
 
+        <button type="submit">Submit</button>
+    </form>
 </body>
-
 </html>
