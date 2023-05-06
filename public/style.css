@@ -273,3 +273,39 @@ form {
     width: 50px;
     height: 50px;
 }
+.appointments-container {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 400px; /* adjust this value to have more or less empty space */
+    margin-bottom: 20px;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    gap: 10px; /* adjust this value to change the space between appointments */
+}
+
+.appointment-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button.edit-btn,
+button.delete-btn {
+    width: 49%;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+button.edit-btn, button.delete-btn {
+    background-color: royalblue; 
+}
+
