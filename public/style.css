@@ -306,6 +306,6 @@ button.delete-btn {
 }
 
 button.edit-btn, button.delete-btn {
-    background-color: royalblue; /* Change this color for the Edit button */
+    background-color: royalblue; 
 }
 
