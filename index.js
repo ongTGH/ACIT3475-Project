@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 
 // Routes start here
 app.get('/', petpalController.index);
-app.get('/login', petpalController.login);
+app.get('/signin', petpalController.signin);
 app.get('/signup', petpalController.signup);
 
 app.listen(PORT, () => {

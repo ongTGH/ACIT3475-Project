@@ -1,16 +1,19 @@
-<div class="loginbox">
-    <form>
-        <h2>Sign-in to your account</h2>
+<div class="grid-container">
+  <%- include('../partials/logo.ejs') %>
+  <main>
+    <div class="loginbox">
+      <form>
+        <h2>Create your account</h2>
+
         <!-- <label for="loginid">E-mail</label> -->
         <i class="fa-regular fa-envelope"></i>
         <input type="text" id="E-mail" placeholder="Type your E-mail address" name="E-mail" required />
 
         <!-- <label for="password">Password:</label> -->
         <input type="password" id="password" placeholder="Type your password" name="password" required />
-        <button type="submit">Login</button>
-        <ul>
-            <li><a href="#">Forgot your Id or password?</a></li>
-            <li><a href="#">Sign up</a></li>
-        </ul>
-    </form>
+        <input type="password" id="r_password" placeholder="Type your password" name="r_password" required />
+        <button type="submit">Create Your account</button>
+      </form>
+    </div>
+  </main>
 </div>
