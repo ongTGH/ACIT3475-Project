@@ -8,6 +8,7 @@
         "pets": [
             {
                 "petId": "1",
+                "petName": "Jeffrey",
                 "breed": "Golden Retriever",
                 "age": 4,
                 "height": 24,
@@ -24,6 +25,7 @@
         "pets": [
             {
                 "petId": "2",
+                "petName": "George",
                 "breed": "Siamese",
                 "age": 2,
                 "height": 10,
