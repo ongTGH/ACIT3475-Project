@@ -22,6 +22,33 @@ button {
     cursor: pointer;
 }
 
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+    transform: translateY(-4px);
+}
+
+button:hover {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+    transform: translateY(-4px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
 .grid-container {
     display: grid;
     align-content: center;
