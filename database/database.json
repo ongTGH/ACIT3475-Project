@@ -1,0 +1,36 @@
+[
+    {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "johndoe@example.com",
+        "password": "password123",
+        "pets": [
+            {
+                "petId": "1",
+                "petName": "Jeffrey",
+                "breed": "Golden Retriever",
+                "age": 4,
+                "height": 24,
+                "weight": 65
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "janesmith@example.com",
+        "password": "letmein",
+        "pets": [
+            {
+                "petId": "2",
+                "petName": "George",
+                "breed": "Siamese",
+                "age": 2,
+                "height": 10,
+                "weight": 8
+            }
+        ]
+    }
+]
