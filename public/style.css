@@ -37,6 +37,10 @@ input:focus {
     transform: translateY(-4px);
 }
 
+button {
+    transition: 0.4s ease-in-out;
+}
+
 button:hover {
     outline: none;
     border-color: #4a90e2;
