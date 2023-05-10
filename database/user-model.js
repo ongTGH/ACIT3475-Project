@@ -5,26 +5,16 @@ const userErrCheck = (user) => {
 };
 
 const userModel = {
-    getAllUsers: () => {
+    findAllUsers: () => {
         return database;
     },
-    getUserById: (id) => {
+    findById: (id) => {
         const user = database.find((user) => user.id.toLowerCase() === id.toLowerCase());
         userErrCheck(user);
         return user;
     },
-    getUserByEmail: (email) => {
+    findByEmail: (email) => {
         const user = database.find((user) => user.email.toLowerCase() === email.toLowerCase());
-        userErrCheck(user);
-        return user;
-    },
-    getUserByFirstName: (firstName) => {
-        const user = database.find((user) => user.firstName.toLowerCase() === firstName.toLowerCase());
-        userErrCheck(user);
-        return user;
-    },
-    getUserByLastName: (lastName) => {
-        const user = database.find((user) => user.lastName.toLowerCase() === lastName.toLowerCase());
         userErrCheck(user);
         return user;
     },

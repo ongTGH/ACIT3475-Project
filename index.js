@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const session = require('express-session');
 const ejsLayouts = require('express-ejs-layouts');
-const passport = require('passport');
 const petpalController = require('./controller/petpal-controller');
+const passport = require("./middleware/passport");
 const path = require("path");
 const PORT = process.env.PORT || 8000;
 
@@ -29,6 +29,12 @@ app.set('view engine', 'ejs');
 // Routes start here
 app.get('/', petpalController.index);
 app.get('/signin', petpalController.signin);
+app.post('/signin',
+    passport.authenticate("local", {
+        successRedirect: "/signup",
+        failureRedirect: "/signin",
+    })
+);
 app.get('/signup', petpalController.signup);
 
 app.listen(PORT, () => {

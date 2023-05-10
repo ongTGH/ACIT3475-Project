@@ -1,11 +1,11 @@
 <div class="grid-container">
   <%- include('../partials/logo.ejs') %>
   <div class="loginbox">
-    <form>
+    <form action="/signin" method="POST">
       <h2>Sign-in to your account</h2>
       <!-- <label for="loginid">E-mail</label> -->
       <i class="fa-regular fa-envelope"></i>
-      <input type="text" id="E-mail" placeholder="Type your E-mail address" name="E-mail" required />
+      <input type="text" id="E-mail" placeholder="Type your E-mail address" name="email" required />
 
       <!-- <label for="password">Password:</label> -->
       <input type="password" id="password" placeholder="Type your password" name="password" required />

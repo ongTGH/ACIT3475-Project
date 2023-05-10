@@ -1,36 +1,222 @@
 [
     {
-        "id": "1",
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "johndoe@example.com",
-        "password": "password123",
+        "id": "57ffaef9-ecfe-45fa-abfb-8cd527f6c9b6",
+        "email": "Ena_Hansen@yahoo.com",
+        "password": "G3Q7_1mjWhr3Jn0",
         "pets": [
             {
-                "petId": "1",
-                "petName": "Jeffrey",
-                "breed": "Golden Retriever",
-                "age": 4,
-                "height": 24,
-                "weight": 65
+                "petId": "7f64a513-c3fd-4bde-bbcb-f1fa0f79a7a7",
+                "petName": "Moriah",
+                "breed": "Tibetan Spaniel",
+                "age": 15,
+                "height": 23,
+                "weight": 47
+            },
+            {
+                "petId": "70573d44-b8cc-49b0-a5e8-f5d214951b80",
+                "petName": "Donavon",
+                "breed": "Petit Bleu de Gascogne",
+                "age": 5,
+                "height": 29,
+                "weight": 15
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "7017ca90-eb29-4eab-b22b-524264204c14",
+                "title": "id quibusdam dolorum",
+                "date": "2034-03-21T20:33:55.004Z",
+                "time": "9:26 AM"
             }
         ]
     },
     {
-        "id": "2",
-        "firstName": "Jane",
-        "lastName": "Smith",
-        "email": "janesmith@example.com",
-        "password": "letmein",
+        "id": "58860508-73c0-4802-862d-00626ebcf771",
+        "email": "Hal35@gmail.com",
+        "password": "3d_KIABo97nUtBU",
         "pets": [
             {
-                "petId": "2",
-                "petName": "George",
-                "breed": "Siamese",
-                "age": 2,
-                "height": 10,
-                "weight": 8
+                "petId": "f3962763-acb2-4472-ac13-6bd7c5674852",
+                "petName": "Florence",
+                "breed": "Boykin Spaniel",
+                "age": 14,
+                "height": 29,
+                "weight": 64
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "c1b79782-a7a8-4ead-9f9f-259c8c08086e",
+                "title": "quae dolorem et",
+                "date": "2025-06-30T09:10:16.220Z",
+                "time": "11:15 AM"
             }
         ]
+    },
+    {
+        "id": "ababe5fa-fd79-404b-b010-09cb539a9d31",
+        "email": "Maybelle5@gmail.com",
+        "password": "dDUTAHPcukKXO1P",
+        "pets": [
+            {
+                "petId": "517edffc-d9c5-40a5-a891-1d964bd2ade0",
+                "petName": "Ole",
+                "breed": "Dingo",
+                "age": 1,
+                "height": 19,
+                "weight": 47
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "b9a53064-23de-4ad8-852b-16a8c88d8043",
+                "title": "eos placeat dolor",
+                "date": "2023-08-10T19:59:35.431Z",
+                "time": "7:36 AM"
+            },
+            {
+                "appointmentId": "ecd05b47-a2d3-4b10-849a-7543fe4c60c5",
+                "title": "porro velit rerum",
+                "date": "2043-09-12T08:47:36.467Z",
+                "time": "3:56 AM"
+            }
+        ]
+    },
+    {
+        "id": "a6e64b2d-a18f-45c9-9132-898dec47e271",
+        "email": "Layla45@gmail.com",
+        "password": "zyPXYOF8eZ0Xg9i",
+        "pets": [
+            {
+                "petId": "c719b97f-c6f4-4039-abfd-4957402d50cb",
+                "petName": "Doug",
+                "breed": "American Staffordshire Terrier",
+                "age": 2,
+                "height": 16,
+                "weight": 69
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "b4a8e041-bf57-4d80-9a0b-0f3032a4380b",
+                "title": "amet eum officia",
+                "date": "2051-07-11T01:20:16.530Z",
+                "time": "1:47 PM"
+            }
+        ]
+    },
+    {
+        "id": "262bb96c-3722-4b7d-b0f9-56f5a0fd10dc",
+        "email": "Hadley.Raynor@yahoo.com",
+        "password": "RQbmt8a2RkLMEu7",
+        "pets": [
+            {
+                "petId": "9308f0e3-d88a-49d2-9bd8-122c02def58a",
+                "petName": "Jalon",
+                "breed": "Skye Terrier",
+                "age": 5,
+                "height": 15,
+                "weight": 22
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "1037b34c-05e0-45c9-bc0a-b453f95d826e",
+                "title": "libero expedita quod",
+                "date": "2036-10-25T10:34:05.500Z",
+                "time": "5:47 AM"
+            },
+            {
+                "appointmentId": "d142fd6e-e406-467e-b0d6-4924c9cdf3c7",
+                "title": "est placeat non",
+                "date": "2041-04-11T00:37:44.478Z",
+                "time": "10:25 AM"
+            }
+        ]
+    },
+    {
+        "id": "30525fee-a3b9-4676-b4d0-2a391703dc47",
+        "email": "Carroll.Wolff75@hotmail.com",
+        "password": "4tYydHcH8gcJWno",
+        "pets": [
+            {
+                "petId": "b0a2c165-da89-427f-b361-f7a14fd2ffa3",
+                "petName": "Arlie",
+                "breed": "Wetterhoun",
+                "age": 11,
+                "height": 30,
+                "weight": 73
+            }
+        ],
+        "appointments": [
+            {
+                "appointmentId": "3c747208-0c8f-48a9-9c1d-97e6d750b2b5",
+                "title": "distinctio ipsam assumenda",
+                "date": "2050-02-17T01:56:04.985Z",
+                "time": "3:23 PM"
+            },
+            {
+                "appointmentId": "ddc8b796-84e4-4614-a474-6567d09a6ab9",
+                "title": "velit eius corrupti",
+                "date": "2051-05-24T00:13:36.955Z",
+                "time": "1:05 AM"
+            }
+        ]
+    },
+    {
+        "id": "a131d760-8623-40cc-92fd-9cdc2026b9aa",
+        "email": "Monserrat.Hettinger25@yahoo.com",
+        "password": "DCDonVQ1X_zQBIZ",
+        "pets": [
+            {
+                "petId": "6e031a14-1836-43df-989a-e452d836bc49",
+                "petName": "Kristina",
+                "breed": "Black Russian Terrier",
+                "age": 6,
+                "height": 30,
+                "weight": 22
+            }
+        ],
+        "appointments": []
+    },
+    {
+        "id": "5d15644b-6263-411b-801c-f01847b78165",
+        "email": "Emie.Kunze59@gmail.com",
+        "password": "Cc436eLuQQcGN7p",
+        "pets": [
+            {
+                "petId": "5cada1b5-0c5c-4726-a1dc-0abd536ed661",
+                "petName": "Autumn",
+                "breed": "Segugio dell'Appennino",
+                "age": 7,
+                "height": 28,
+                "weight": 78
+            },
+            {
+                "petId": "39f8474e-90a1-48d0-91ce-0e89208bb2e4",
+                "petName": "Mallory",
+                "breed": "Jonangi",
+                "age": 3,
+                "height": 21,
+                "weight": 89
+            }
+        ],
+        "appointments": []
+    },
+    {
+        "id": "3fdc4929-4ba0-4718-9f1c-d973c2c7cd45",
+        "email": "Jackeline_Herzog@yahoo.com",
+        "password": "QHFH6wQXnm_GOKb",
+        "pets": [
+            {
+                "petId": "d6f3d0f6-e669-4d6a-84eb-38f9bc8ae879",
+                "petName": "Kaden",
+                "breed": "Ratonero Mallorquin",
+                "age": 13,
+                "height": 26,
+                "weight": 70
+            }
+        ],
+        "appointments": []
     }
 ]
