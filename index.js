@@ -31,11 +31,14 @@ app.get('/', petpalController.index);
 app.get('/signin', petpalController.signin);
 app.post('/signin',
     passport.authenticate("local", {
-        successRedirect: "/signup",
+        successRedirect: "/appt",
         failureRedirect: "/signin",
     })
 );
 app.get('/signup', petpalController.signup);
+app.get('/appt', petpalController.appointments);
+// google
+app.get('/auth/google', passport.authenticate('google', { scope: ['email', 'profile'] }));
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

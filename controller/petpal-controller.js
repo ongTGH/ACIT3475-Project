@@ -8,6 +8,9 @@ let petpalController = {
     signup: (req, res) => {
         res.render("auth/signup");
     },
+    appointments: (req, res) => {
+        res.render("appointments/appt");
+    }
 };
 
 module.exports = petpalController;
