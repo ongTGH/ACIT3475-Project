@@ -1,0 +1,340 @@
+[
+  {
+    "id": "1684988726545",
+    "name": "Dummy user",
+    "email": "dummyuser@example.com",
+    "password": "$2b$10$hYQ0DEkxLeo3cchiSD82Z.NHypntdO7sQBX1z.Cg1/5.yk1BXWuCy",
+    "pets": [
+      {
+        "id": "1684989280694",
+        "name": "Bella",
+        "type": "Dog",
+        "breed": " Labrador Retriever",
+        "age": " 6 years old",
+        "sex": " Female",
+        "neutered": "Yes",
+        "weight": "70 lbs",
+        "health-history": "No known health issues, up-to-date on all vaccines",
+        "behavior": "Friendly, loves to play, good with children and other animals",
+        "diet": "No known food allergies; prefers dry kibble",
+        "exercise": "Two daily walks and playtime in the yard",
+        "grooming": "Monthly bathing and brushing",
+        "microchip": "982009106543210",
+        "insurance": "Insured through Pet's Best, policy #PB123456",
+        "emergency-contact": "(555) 555-5555 - John Doe",
+        "special-needs": "None",
+        "appointments": [
+          {
+            "id": "1684993363072",
+            "title": " Annual Vet Check-up",
+            "date": "2023-06-15",
+            "desc": "Bella's regular annual check-up at the vet. Ensure she gets her required vaccinations and a general health check.\r\n\r\n",
+            "time": "2:00 PM",
+            "location": "Happy Tails Veterinary Clinic, 123 Doggie Street",
+            "note": "Remember to bring Bella's health card and insurance details. Don't feed her breakfast as blood work might be needed."
+          },
+          {
+            "id": "2684993363073",
+            "title": "Bella's Grooming Appointment",
+            "date": "2023-06-25",
+            "desc": "Bella has an appointment for grooming. Includes bath, nail trim, and ear cleaning.",
+            "time": "10:00 AM",
+            "location": "Pampered Pooches Salon, 456 Canine Avenue",
+            "note": "Remember to bring Bella's favorite treats to keep her calm. Confirm next appointment date before leaving."
+          },
+          {
+            "id": "3684993363074",
+            "title": "Bella's Training Session",
+            "date": "2023-07-01",
+            "desc": "Bella's scheduled obedience training session with the dog trainer.",
+            "time": "4:00 PM",
+            "location": "K9 Academy, 789 Pup Lane",
+            "note": "Bring a variety of treats and Bella's favorite toy. Discuss progress with trainer after session."
+          },
+          {
+            "id": "4684993363075",
+            "title": "Dog Park Visit",
+            "date": "2023-07-10",
+            "desc": "Taking Bella to the local dog park for play and socialization.",
+            "time": "6:00 PM",
+            "location": "Friendly Paws Dog Park, 159 Bark Road",
+            "note": "Pack water, treats, poop bags, and Bella's favorite ball. Monitor her interaction with new dogs."
+          },
+          {
+            "id": "5684993363076",
+            "title": "Dental Cleaning Appointment",
+            "date": "2023-07-20",
+            "desc": "Bella's semi-annual dental cleaning at the vet.",
+            "time": "1:00 PM",
+            "location": "Happy Tails Veterinary Clinic, 123 Doggie Street",
+            "note": "Avoid feeding Bella 4 hours before the appointment. Confirm the next visit date before leaving."
+          }
+        ]
+      },
+      {
+        "id": "1684990207774",
+        "name": "Whiskers",
+        "type": "Cat",
+        "breed": " Maine Coon",
+        "age": "3 years old",
+        "sex": "Male",
+        "neutered": "Yes",
+        "weight": "15 lbs",
+        "health-history": "Mild cat asthma, managed with an inhaler",
+        "behavior": "Independent, enjoys cuddling on own terms, can be wary of strangers",
+        "diet": "Special diet due to sensitive stomach; Royal Canin Digest Sensitive",
+        "exercise": "Indoor playtime with toys and laser pointer",
+        "grooming": "Weekly brushing due to long hair",
+        "microchip": "900111000222333",
+        "insurance": "Insured through Nationwide, policy #NW987654",
+        "emergency-contact": "Jane Smith - (444) 444-4444",
+        "special-needs": "Requires inhaler for asthma",
+        "appointments": [
+          {
+            "id": "2684990207775",
+            "title": "Whiskers' Vet Appointment for Asthma Check",
+            "date": "2023-06-18",
+            "desc": "Whiskers has a check-up at the vet for his asthma condition. Discuss any changes in symptoms with the vet.",
+            "time": "9:30 AM",
+            "location": "Cats' Corner Veterinary Clinic, 456 Kitty Boulevard",
+            "note": "Remember to bring Whiskers' inhaler and health card. Ensure his carrier is comfortable and calming for him."
+          },
+          {
+            "id": "3684990207776",
+            "title": "Whiskers' Grooming Session",
+            "date": "2023-06-30",
+            "desc": "Whiskers' monthly grooming session. Includes bath, nail trim, ear cleaning, and brushing.",
+            "time": "2:00 PM",
+            "location": "Purrfect Groomers, 789 Catwalk",
+            "note": "Bring his favorite blanket to make him feel secure. Confirm next appointment before leaving."
+          },
+          {
+            "id": "4684990207777",
+            "title": "Restock Whiskers' Special Diet",
+            "date": "2023-07-05",
+            "desc": "Time to buy more of Whiskers' special diet - Royal Canin Digest Sensitive.",
+            "time": "5:00 PM",
+            "location": "Petland Supplies, 321 Feline Street",
+            "note": "Check for any special deals or discounts. Buy in bulk if possible."
+          },
+          {
+            "id": "5684990207778",
+            "title": "Annual Vaccinations",
+            "date": "2023-07-23",
+            "desc": "Whiskers' annual vaccinations at the vet. Includes FVRCP and rabies vaccine.",
+            "time": "10:00 AM",
+            "location": "Cats' Corner Veterinary Clinic, 456 Kitty Boulevard",
+            "note": "Avoid feeding Whiskers 2 hours before the appointment. Bring his insurance details."
+          },
+          {
+            "id": "6684990207779",
+            "title": "Whiskers' Dental Cleaning",
+            "date": "2023-08-01",
+            "desc": "Scheduled dental cleaning for Whiskers. This helps prevent tartar buildup and promotes good oral health.",
+            "time": "1:30 PM",
+            "location": "Cats' Corner Veterinary Clinic, 456 Kitty Boulevard",
+            "note": "Make sure Whiskers is well-hydrated before the appointment. Bring his health card and insurance details."
+          }
+        ]
+      },
+      {
+        "id": "1684990316466",
+        "name": "Rocky",
+        "type": "Dog",
+        "breed": "German Shepherd",
+        "age": "5 years old",
+        "sex": "Male",
+        "neutered": "Yes",
+        "weight": "90 lbs",
+        "health-history": "Had hip dysplasia surgery at 2 years, currently healthy",
+        "behavior": "Loyal, protective, needs slow introductions to other dogs",
+        "diet": "Grain-free diet",
+        "exercise": "Daily long walks and mental stimulation games",
+        "grooming": "Weekly brushing",
+        "microchip": "981020006789101",
+        "insurance": "Insured through Trupanion, policy #TR123456",
+        "emergency-contact": "Lisa Brown - (333) 333-3333",
+        "special-needs": "Needs joint supplements for hip health",
+        "appointments": [
+          {
+            "id": "6684990217785",
+            "title": "Rocky's Physiotherapy",
+            "date": "2023-06-30",
+            "desc": "Scheduled physiotherapy for Rocky to maintain hip mobility and strength after his dysplasia surgery.",
+            "time": "10:00 AM",
+            "location": "Canine Care Physiotherapy, 789 Doggo Avenue",
+            "note": "Make sure Rocky is well-rested before the session. Bring his health card and insurance details."
+          },
+          {
+            "id": "6684990217786",
+            "title": "Annual Vaccination",
+            "date": "2023-07-20",
+            "desc": "Annual vaccination for Rocky, including core vaccines and others as required.",
+            "time": "3:00 PM",
+            "location": "Canine Care Clinic, 789 Doggo Avenue",
+            "note": "Bring Rocky's health card and insurance details."
+          },
+          {
+            "id": "6684990217787",
+            "title": "Rocky's Spa Day",
+            "date": "2023-08-15",
+            "desc": "A day of grooming for Rocky. Includes bath, brush, nail trimming, and ear cleaning.",
+            "time": "11:00 AM",
+            "location": "Paws and Claws Spa, 321 Pupper Street",
+            "note": "Remember to pack his favorite treats and toys."
+          },
+          {
+            "id": "6684990217788",
+            "title": "Hip Check-up",
+            "date": "2023-09-15",
+            "desc": "A regular check-up for Rocky's hips to monitor for any dysplasia symptoms.",
+            "time": "4:00 PM",
+            "location": "Canine Care Clinic, 789 Doggo Avenue",
+            "note": "Make sure to bring his medical and insurance documents."
+          },
+          {
+            "id": "6684990217789",
+            "title": "Behavior Training Session",
+            "date": "2023-10-10",
+            "desc": "Behavioral training session with a professional to improve Rocky's social skills with other dogs.",
+            "time": "2:00 PM",
+            "location": "Good Dog Behavior Center, 567 Good Dog Way",
+            "note": "Ensure Rocky is well-rested and has had a walk before the session."
+          }
+        ]
+      },
+      {
+        "id": "1684991638004",
+        "name": "Goldie",
+        "type": "Fish",
+        "breed": "Goldfish",
+        "age": "1 year old",
+        "sex": "Female",
+        "neutered": "N/A",
+        "weight": "N/A",
+        "health-history": "Healthy, no known issues",
+        "behavior": "Active swimmer, responsive to feeding times",
+        "diet": "Standard goldfish flakes",
+        "exercise": "N/A",
+        "grooming": "N/A",
+        "microchip": "N/A",
+        "insurance": "N/A",
+        "emergency-contact": "Pete Martin - (222) 222-2222",
+        "special-needs": "Requires clean tank and proper pH balance",
+        "appointments": [
+          {
+            "id": "2684990217790",
+            "title": "Tank Cleaning",
+            "date": "2023-06-07",
+            "desc": "Routine cleaning of Goldie's tank to maintain a clean and healthy environment.",
+            "time": "4:00 PM",
+            "location": "Home",
+            "note": "Ensure to temporarily move Goldie into a safe and clean container during the cleaning process."
+          },
+          {
+            "id": "2684990217791",
+            "title": "Water Quality Check",
+            "date": "2023-06-15",
+            "desc": "Regular check-up of Goldie's water to ensure it is at the proper pH balance.",
+            "time": "10:00 AM",
+            "location": "Home",
+            "note": "Have the pH test kit ready."
+          },
+          {
+            "id": "2684990217792",
+            "title": "Food Stock-Up",
+            "date": "2023-07-01",
+            "desc": "Replenishing Goldie's food supply. Remember to buy standard goldfish flakes.",
+            "time": "3:00 PM",
+            "location": "Pet Supply Store, 123 Fishy Lane",
+            "note": "Check expiry date before buying."
+          },
+          {
+            "id": "2684990217793",
+            "title": "Decoration Change",
+            "date": "2023-07-20",
+            "desc": "Refreshing the decor in Goldie's tank for stimulation.",
+            "time": "1:00 PM",
+            "location": "Home",
+            "note": "Ensure the new decor does not have sharp edges."
+          },
+          {
+            "id": "2684990217794",
+            "title": "Health Check-up",
+            "date": "2023-08-10",
+            "desc": "Annual health check-up for Goldie to make sure she's in optimal health.",
+            "time": "11:00 AM",
+            "location": "Exotic Aquatics Veterinary Clinic, 456 Water Way",
+            "note": "Ensure to safely transport Goldie in a secure and oxygenated container."
+          }
+        ]
+      },
+      {
+        "id": "1684992462628",
+        "name": "Buddy",
+        "type": "Bird",
+        "breed": "Cockatiel",
+        "age": "2 years old",
+        "sex": "Male",
+        "neutered": "No",
+        "weight": "0.3lbs",
+        "health-history": "Treated for a minor wing infection at 1 year, no current health issues",
+        "behavior": "Social, enjoy singing, can be loud",
+        "diet": "Diet of pellet food, fruits, and veggies",
+        "exercise": "Daily out-of-cage flight time in a safe environment",
+        "grooming": "Regular beak and feather checks",
+        "microchip": "N/A",
+        "insurance": "Insured through Bird's Best, policy #BB654321",
+        "emergency-contact": "Kim White - (111) 111-1111",
+        "special-needs": "Needs mental stimulation, including toys and interaction",
+        "appointments": [
+          {
+            "id": "3684990217900",
+            "title": "Wing Clipping",
+            "date": "2023-06-08",
+            "desc": "Routine wing clipping appointment to keep Buddy's flight controlled and safe.",
+            "time": "11:00 AM",
+            "location": "Feathers and Beaks Vet Clinic, 123 Avian Ave",
+            "note": "Ensure Buddy is comfortable and calm before the appointment."
+          },
+          {
+            "id": "3684990217901",
+            "title": "Stock Up on Toys",
+            "date": "2023-06-22",
+            "desc": "Replenish Buddy's toys to keep him mentally stimulated.",
+            "time": "2:30 PM",
+            "location": "Pet Toy Store, 456 Playful Lane",
+            "note": "Buy different types of toys - puzzle, foraging, and shreddable toys."
+          },
+          {
+            "id": "3684990217902",
+            "title": "Health Check-Up",
+            "date": "2023-07-05",
+            "desc": "Annual health check-up for Buddy to ensure he's in good health.",
+            "time": "10:00 AM",
+            "location": "Feathers and Beaks Vet Clinic, 123 Avian Ave",
+            "note": "Bring Buddy's health card and insurance details."
+          },
+          {
+            "id": "3684990217903",
+            "title": "Beak Trim",
+            "date": "2023-07-20",
+            "desc": "Routine beak trim to prevent overgrowth and to keep Buddy comfortable.",
+            "time": "1:00 PM",
+            "location": "Feathers and Beaks Vet Clinic, 123 Avian Ave",
+            "note": "Ensure Buddy is comfortable and calm before the appointment."
+          },
+          {
+            "id": "3684990217904",
+            "title": "Food Stock-Up",
+            "date": "2023-08-02",
+            "desc": "Time to restock Buddy's food supply - pellet food, fresh fruits, and veggies.",
+            "time": "3:00 PM",
+            "location": "Healthy Birds Store, 789 Feather Rd",
+            "note": "Make sure to buy a variety of fruits and veggies to provide diverse nutrition."
+          }
+        ]
+      }
+    ]
+  }
+]

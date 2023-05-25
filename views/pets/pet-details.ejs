@@ -1,0 +1,104 @@
+<div class="main-grid-container">
+  <%- include('../partials/header') %>
+  <main class="pet-container">
+    <header class="messages">
+      <div>
+        <h1 class="appointment-msg">Pet Details:</h1>
+      </div>
+    </header>
+    <section class="pet-details">
+      <h2 class="pet-item-header"><%= pet.name %> (<%=pet.type%>)</h2>
+      <div class="pet-info">
+        <div class="first-column-pet">
+          <div class="pet-info-item">
+            <label>Breed:</label>
+            <p><%= pet.breed %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Age:</label>
+            <p><%= pet.age %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Weight:</label>
+            <p><%= pet.weight %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Sex:</label>
+            <p><%= pet.sex %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Emergency Contact:</label>
+            <p><%= pet['emergency-contact'] %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Neutered/Spayed:</label>
+            <p><%= pet.neutered %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Health History:</label>
+            <p><%= pet['health-history'] %></p>
+          </div>
+        </div>
+        <div class="second-column-pet">
+          <div class="pet-info-item">
+            <label>Behavior:</label>
+            <p><%= pet.behavior %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Diet:</label>
+            <p><%= pet.diet %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Exercise:</label>
+            <p><%= pet.exercise %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Grooming:</label>
+            <p><%= pet.grooming %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Microchip:</label>
+            <p><%= pet.microchip %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Insurance:</label>
+            <p><%= pet.insurance %></p>
+          </div>
+          <div class="pet-info-item">
+            <label>Special Needs:</label>
+            <p><%= pet['special-needs'] %></p>
+          </div>
+        </div>
+      </div>
+      <div class="pet-action-buttons">
+        <button id="edit-pet">Edit</button>
+        <button id="delete-pet">Delete</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+  document.getElementById("edit-pet").addEventListener("click", function(event) {
+    window.location.href = `/pets/${'<%= pet.id %>'}/edit`;
+  });
+
+  document.getElementById("delete-pet").addEventListener("click", function(event) {
+    const confirmation = confirm("Are you sure you want to delete this pet?");
+
+    if (confirmation) {
+      fetch(`/pets/${'<%= pet.id %>'}/delete`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }).then((response) => {
+        if (response.ok) {
+          window.location.href = "/pets";
+        }
+      }).catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+  });
+</script>

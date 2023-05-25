@@ -1,0 +1,43 @@
+<div class="action-btns">
+  <a class="edit btn-style" href="/appointments/<%= petId %>/<%= appointmentId %>/edit">Edit</a>
+  <a class="delete btn-style" href="#" onclick="confirmDelete('<%= petId %>', '<%= appointmentId %>', event)">Delete</a>
+</div>
+
+<script>
+  function confirmDelete(petId, appointmentId, event) {
+    event.preventDefault(); // prevent the default behavior of the <a> element
+    if (confirm("Are you sure you want to delete this appointment?")) {
+      fetch('/appointments/' + petId + '/' + appointmentId + '/delete', {
+        method: 'POST'
+      }).then((res) => {
+        if (res.ok) {
+          // If the deletion was successful, remove the appointment div
+          const appointmentItem = event.target.closest('.appointment-item');
+          if (appointmentItem) {
+            appointmentItem.remove();
+          }
+
+          // After successful deletion, check if there are any more appointments
+          checkIfNoAppointments();
+        }
+      });
+    }
+  }
+
+  function checkIfNoAppointments() {
+    const appointmentList = document.getElementById('appt-list');
+    const appointments = appointmentList.getElementsByClassName('appointment-item');
+
+    if (appointments.length === 0) {
+      // No appointments found, display the message
+      const noAppointmentsHTML = `
+      <div class="search-fail search-fail-margin">
+        <img src="/img/search.png" alt="failed search">
+        <p>No appointments found</p>
+      </div>
+    `;
+
+      appointmentList.innerHTML = noAppointmentsHTML;
+    }
+  }
+</script>

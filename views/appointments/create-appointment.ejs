@@ -1,0 +1,26 @@
+<div class="main-grid-container">
+  <%- include('../partials/header') %>
+  <main class="pet-container">
+    <header class="messages">
+      <div>
+        <h1 class="welcome-msg">Create an appointment here:</h1>
+      </div>
+    </header>
+    <section class="appointment-form-container">
+      <form action="/appointments/create" method="POST" class="pet-form">
+        <div class="form-field">
+          <label for="pet">Select Pet:</label>
+          <select id="pet" name="pet" required>
+            <% pets.forEach(function(pet) { %>
+            <option value="<%= pet.id %>"><%= pet.name %></option>
+            <% }); %>
+          </select>
+        </div>
+        <%- include('../partials/appointment-form', { currentPage: 'create' }) %>
+        <div class="form-field">
+          <button type="submit" class="appt-submit">Create Appointment</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
