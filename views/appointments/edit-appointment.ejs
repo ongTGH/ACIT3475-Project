@@ -1,0 +1,36 @@
+<div class="main-grid-container">
+  <%- include('../partials/header') %>
+  <div class="navbar">
+    <%- include('../partials/create-btns') %>
+    <%- include('../partials/sidebar') %>
+  </div>
+  <main class="appointment-container">
+    <header class="messages">
+      <div>
+        <!-- <h1 class="welcome-msg">Welcome <%= user.name %>!</h1> -->
+        <h1 class="appointment-msg">Edit <%= pet.name %>'s Appointment</h1>
+      </div>
+    </header>
+    <section class="add-pet-container">
+      <form action="/appointments/<%= petId %>/<%= appointment.id %>/edit" method="POST">
+        <!-- partial from appointment-form.ejs -->
+        <%- include('../partials/appointment-form', { appointment: appointment, currentPage: 'edit' }) %>
+        <div class="form-field">
+          <button type="submit" class="appt-submit">Update</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
+
+
+<script>
+  function validateDateInput(input) {
+    const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+    if (!datePattern.test(input.value)) {
+      input.setCustomValidity('Please enter a valid date in the format YYYY-MM-DD.');
+    } else {
+      input.setCustomValidity('');
+    }
+  }
+</script>

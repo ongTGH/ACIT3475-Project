@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <header class="sidebar-header">
+    <h1 class="sidebar-title">Your Pets:</h1>
+  </header>
+  <nav class="sidebar-nav">
+    <% if (user.pets.length > 0) { %>
+    <ul>
+      <% user.pets.forEach(function(pet) { %>
+      <li><a href="/appointments/<%= pet.id %>"><%= pet.name %></a></li>
+      <% }); %>
+    </ul>
+    <% } else { %>
+    <div class="search-fail">
+      <img src="/img/search.png" alt="failed search"></img>
+      <p>No pets found</p>
+    </div>
+    <% } %>
+  </nav>
+</div>

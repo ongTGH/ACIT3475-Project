@@ -1,0 +1,30 @@
+<div class="main-grid-container">
+  <% include('../partials/header') %>
+  <main class="pet-container">
+    <div class="pet-border-style">
+      <header class="messages">
+        <div>
+          <h1 class="welcome-msg">Pet Added Successfully!</h1>
+        </div>
+      </header>
+      <section class="added-pet-info">
+        <h2><%= pet.name %></h2>
+        <p>Breed: <%= pet.breed %></p>
+        <p>Age: <%= pet.age %></p>
+        <p>Sex: <%= pet.sex %></p>
+        <p>Neutered/Spayed: <%= pet.neutered %></p>
+        <p>Weight: <%= pet.weight %></p>
+        <p>Health History: <%= pet['health-history'] %></p>
+        <p>Behavior: <%= pet.behavior %></p>
+        <p>Diet: <%= pet.diet %></p>
+        <p>Exercise: <%= pet.exercise %></p>
+        <p>Grooming: <%= pet.grooming %></p>
+        <p>Microchip Number: <%= pet.microchip %></p>
+        <p>Insurance Details: <%= pet.insurance %></p>
+        <p>Emergency Contact: <%= pet['emergency-contact'] %></p>
+        <p>Special Needs or Considerations: <%= pet['special-needs'] %></p>
+        <a href="/appointments">Go to Your Pets</a>
+      </section>
+    </div>
+  </main>
+</div>

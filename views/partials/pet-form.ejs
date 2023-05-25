@@ -1,0 +1,53 @@
+<form action="<%= pet ? `/pets/${pet.id}/edit` : '/pets/add-pet' %>" method="POST" class="pet-form">
+  <div class="first-column">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="<%= pet ? pet.name : '' %>" required>
+
+    <label for="type">Type of Pet</label>
+    <input type="text" id="type" name="type" value="<%= pet ? pet.type : '' %>" required>
+
+    <label for="breed">Breed of Pet</label>
+    <input type="text" id="breed" name="breed" value="<%= pet ? pet.breed : '' %>" required>
+
+    <label for="age">Age of Pet</label>
+    <input type="text" id="age" name="age" value="<%= pet ? pet.age : '' %>" required>
+
+    <label for="sex">Sex of Pet</label>
+    <input type="text" id="sex" name="sex" value="<%= pet ? pet.sex : '' %>" required>
+
+    <label for="neutered">Neutered/Spayed</label>
+    <input type="text" id="neutered" name="neutered" value="<%= pet ? pet.neutered : '' %>" required>
+
+    <label for="weight">Weight</label>
+    <input type="text" id="weight" name="weight" value="<%= pet ? pet.weight : '' %>" required>
+
+    <label for="health-history">Health History</label>
+    <textarea id="health-history" name="health-history" rows="4" required><%= pet ? pet['health-history'] : '' %></textarea>
+
+    <label for="behavior">Behavioral Traits</label>
+    <textarea id="behavior" name="behavior" rows="4" required><%= pet ? pet.behavior : '' %></textarea>
+  </div>
+  <div class="second-column">
+    <label for="diet">Dietary Preferences and Restrictions</label>
+    <textarea id="diet" name="diet" rows="4" required><%= pet ? pet.diet : '' %></textarea>
+
+    <label for="exercise">Exercise Routine</label>
+    <textarea id="exercise" name="exercise" rows="4" required><%= pet ? pet.exercise : '' %></textarea>
+
+    <label for="grooming">Grooming Needs</label>
+    <textarea id="grooming" name="grooming" rows="4" required><%= pet ? pet.grooming : '' %></textarea>
+
+    <label for="microchip">Microchip Number</label>
+    <input type="text" id="microchip" name="microchip" value="<%= pet ? pet.microchip : '' %>" required>
+
+    <label for="insurance">Pet Insurance Details</label>
+    <textarea id="insurance" name="insurance" rows="4" required><%= pet ? pet.insurance : '' %></textarea>
+
+    <label for="emergency-contact">Emergency Contact</label>
+    <input type="text" id="emergency-contact" name="emergency-contact" value="<%= pet ? pet['emergency-contact'] : '' %>" required>
+
+    <label for="special-needs">Special Needs or Considerations</label>
+    <textarea id="special-needs" name="special-needs" rows="4" required><%= pet ? pet['special-needs'] : '' %></textarea>
+  </div>
+  <button type="submit" class="add-pet-btn"><%= pet ? 'Update Pet' : 'Add Pet' %></button>
+</form>

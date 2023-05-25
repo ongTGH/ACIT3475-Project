@@ -1,19 +1,24 @@
 <div class="grid-container">
-  <%- include('../partials/logo.ejs') %>
-  <main>
-    <div class="loginbox">
-      <form method="POST" action="/signin">
-        <h2>sign-in to your account</h2>
+  <header class="index-logo-container">
+    <img src="../img/petpal.png" alt="logo" class="index-logo">
+  </header>
+  <main class="index-auth-container">
+    <h1>Welcome back!</h1>
+    <form action="/signin" method="POST" class="signin-form">
 
-        <!-- <label for="loginid">E-mail</label> -->
-        <i class="fa-regular fa-envelope"></i>
-        <input type="text" id="E-mail" placeholder="Type your E-mail address" name="email" required />
+      <header class="signin-header">
+        <h1>Sign in</h1>
+      </header>
 
-        <!-- <label for="password">Password:</label> -->
-        <input type="password" id="password" placeholder="Type your password" name="password" required />
-        <button type="button" id="Loginbtn" disabled>Login</button>
-        <%- include('../partials/auth-btns.ejs') %>
-      </form>
-    </div>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit" class="index-signin">Sign In</button>
+      <p>Don't have an account? <a href="/signup">Sign up</a></p>
+      <p class="signin-divider">Or sign in with</p>
+      <div class="social-signin">
+        <a href="#" class="signin-google">Google</a>
+        <a href="appointments" class="signin-fb">Facebook</a>
+      </div>
+    </form>
   </main>
 </div>

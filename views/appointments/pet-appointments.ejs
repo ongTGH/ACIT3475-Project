@@ -1,0 +1,45 @@
+<div class="main-grid-container">
+  <%- include('../partials/header') %>
+  <div class="navbar">
+    <%- include('../partials/create-btns') %>
+    <%- include('../partials/sidebar') %>
+  </div>
+  <main class="appointment-container">
+    <header class="messages">
+      <div>
+        <% if (typeof petName !== 'undefined' && petName) { %>
+        <!-- <h1 class="welcome-msg">Welcome <%= user.name %>!</h1> -->
+        <h1 class="welcome-msg">Here are <%= petName %>'s appointments:</h1>
+        <% } else { %>
+        <h1 class="welcome-msg">Welcome <%= user.name %>!</h1>
+        <% } %>
+      </div>
+    </header>
+    <section class="appointment-list" id="appt-list">
+      <% if (appointments.length > 0) { %>
+      <% appointments.forEach(function(appointment) { %>
+      <div class="appointment-item">
+        <div class="appointment-item-header">
+          <h2><%= appointment.title %></h2>
+          <p><%= appointment.date %></p>
+        </div>
+        <div class="appointment-item-body">
+          <p><%= appointment.desc %></p>
+          <p><%= appointment.time %></p>
+          <p>Location: <%= appointment.location %></p>
+          <p>Notes: <%= appointment.note %></p>
+        </div>
+        <div class="appointment-item-actions">
+          <%- include('../partials/action-btns', { appointmentId: appointment.id, petId: petId }) %>
+        </div>
+      </div>
+      <% }); %>
+      <% } else { %>
+      <div class="search-fail search-fail-margin">
+        <img src="/img/search.png" alt="failed search">
+        <p>No appointments found</p>
+      </div>
+      <% } %>
+    </section>
+  </main>
+</div>
