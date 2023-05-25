@@ -43,8 +43,6 @@ const signInUser = (req, res, next) => {
         if (!user) {
             return res.redirect('/signin');
         }
-
-        // Manually create the session file
         const sessionFilePath = path.join(__dirname, '../sessions', req.sessionID + '.json');
         fs.writeFileSync(sessionFilePath, JSON.stringify(req.session));
 

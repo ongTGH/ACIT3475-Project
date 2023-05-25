@@ -3,6 +3,27 @@ const fs = require('fs');
 const databaseFilePath = path.join(__dirname, '..', 'data', 'database.json');
 const redirectScript = require('../public/js/redirect-script');
 
+const convertTo12HourFormat = (time) => {
+    const [hours, minutes] = time.split(':');
+    let formattedTime = '';
+
+    let parsedHours = parseInt(hours, 10);
+    let period = 'AM';
+
+    if (parsedHours === 0) {
+        formattedTime = `12:${minutes} AM`;
+    } else if (parsedHours === 12) {
+        formattedTime = `12:${minutes} PM`;
+    } else if (parsedHours > 12) {
+        parsedHours -= 12;
+        formattedTime = `${parsedHours}:${minutes} PM`;
+    } else {
+        formattedTime = `${parsedHours}:${minutes} AM`;
+    }
+
+    return formattedTime;
+};
+
 // Render the appointments page
 const renderAppointments = (req, res, next) => {
     const user = req.user;
@@ -50,23 +71,17 @@ const saveAppointment = (req, res, next) => {
 
     pet.appointments.push(newAppointment);
     fs.writeFileSync(databaseFilePath, JSON.stringify(users), 'utf8');
-    // Add a 1 second delay to to load new appointments before redirecting
     const scriptContent = redirectScript(pet.id);
     res.send(scriptContent);
 };
 
 const renderEditAppointment = (req, res, next) => {
-    // Retrieve the petId and appointmentId from the request parameters
     const { petId, appointmentId } = req.params;
-
-    // Retrieve the user and find the pet and appointment
     const user = req.user;
     const pet = user.pets.find(pet => pet.id === petId);
     const appointment = pet ? pet.appointments.find(appointment => appointment.id === appointmentId) : null;
 
-    // Check if pet or appointment is not found
     if (!pet || !appointment) {
-        // Handle error, pet or appointment not found
         return res.redirect('/appointments');
     }
 
@@ -76,29 +91,8 @@ const renderEditAppointment = (req, res, next) => {
         petId,
         pet,
         appointment,
-        pets: user.pets // Include the pets data when rendering the view
+        pets: user.pets
     });
-};
-
-const convertTo12HourFormat = (time) => {
-    const [hours, minutes] = time.split(':');
-    let formattedTime = '';
-
-    let parsedHours = parseInt(hours, 10);
-    let period = 'AM';
-
-    if (parsedHours === 0) {
-        formattedTime = `12:${minutes} AM`;
-    } else if (parsedHours === 12) {
-        formattedTime = `12:${minutes} PM`;
-    } else if (parsedHours > 12) {
-        parsedHours -= 12;
-        formattedTime = `${parsedHours}:${minutes} PM`;
-    } else {
-        formattedTime = `${parsedHours}:${minutes} AM`;
-    }
-
-    return formattedTime;
 };
 
 const updateAppointment = (req, res, next) => {
@@ -108,7 +102,6 @@ const updateAppointment = (req, res, next) => {
     const appointment = pet ? pet.appointments.find((appointment) => appointment.id === req.params.appointmentId) : null;
 
     if (!pet || !appointment) {
-        // Handle error, pet or appointment not found
         return res.redirect('/appointments');
     }
 
@@ -120,7 +113,6 @@ const updateAppointment = (req, res, next) => {
     appointment.note = req.body.note;
 
     fs.writeFileSync(databaseFilePath, JSON.stringify(users), 'utf8');
-    // Add a 1 second delay to load updated appointment before redirecting
     const scriptContent = redirectScript(pet.id);
     res.send(scriptContent);
 };
@@ -134,7 +126,6 @@ const deleteAppointment = (req, res, next) => {
     if (appointmentIndex >= 0) {
         pet.appointments.splice(appointmentIndex, 1);
         fs.writeFileSync(databaseFilePath, JSON.stringify(users), 'utf8');
-        // Redirect to the appointments page
         res.redirect('/appointments/' + pet.id);
     }
 
