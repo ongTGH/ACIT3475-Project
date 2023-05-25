@@ -5,19 +5,16 @@
 
 <script>
   function confirmDelete(petId, appointmentId, event) {
-    event.preventDefault(); // prevent the default behavior of the <a> element
+    event.preventDefault();
     if (confirm("Are you sure you want to delete this appointment?")) {
       fetch('/appointments/' + petId + '/' + appointmentId + '/delete', {
         method: 'POST'
       }).then((res) => {
         if (res.ok) {
-          // If the deletion was successful, remove the appointment div
           const appointmentItem = event.target.closest('.appointment-item');
           if (appointmentItem) {
             appointmentItem.remove();
           }
-
-          // After successful deletion, check if there are any more appointments
           checkIfNoAppointments();
         }
       });
@@ -29,7 +26,6 @@
     const appointments = appointmentList.getElementsByClassName('appointment-item');
 
     if (appointments.length === 0) {
-      // No appointments found, display the message
       const noAppointmentsHTML = `
       <div class="search-fail search-fail-margin">
         <img src="/img/search.png" alt="failed search">
