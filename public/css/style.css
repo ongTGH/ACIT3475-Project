@@ -23,7 +23,7 @@ body.normal {
 }
 
 body {
-    height: 1vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
@@ -87,7 +87,7 @@ body {
     width: 14em;
     border-radius: var(--btn-border-radius);
     box-shadow: var(--main-box-shadow);
-    transition: 0.4s ease-in-out;
+    transition: 0.4s all ease-in-out;
     color: var(--index-auth-btn-text);
     cursor: pointer;
 }
@@ -95,8 +95,7 @@ body {
 .index-signup:hover,
 .index-signin:hover {
     outline: none;
-    color: var(--main-btn-color);
-    border: var(--petpal-dark-green) 2px solid;
+    transform: scale(1.03);
 }
 
 /*! styling for signin.html */
@@ -109,7 +108,7 @@ body {
     background: var(--main-bg-color);
     border-radius: 15px;
     width: 30em;
-    height: 48em;
+    height: 80vh;
     margin: 1em;
     box-shadow: var(--main-box-shadow);
 }
@@ -120,7 +119,7 @@ body {
     margin: 1em;
     border-radius: 1em;
     border: none;
-    padding: 1em 0.7em 1em 1.3em;
+    padding: 1.3em 0.7em 1.3em 1.3em;
     background-color: #e0e3df;
 }
 
@@ -151,7 +150,7 @@ body {
 }
 
 .social-signin a {
-    margin: 0.6em;
+    margin-bottom: 2em;
     width: 18.5em;
     padding: 1.2em 1.08em;
     text-align: center;
@@ -160,7 +159,7 @@ body {
     color: var(--index-auth-btn-text);
     box-shadow: var(--main-box-shadow);
     color: var(--main-bg-color);
-    transition: 0.4s ease-in-out;
+    transition: 0.4s all ase-in-out;
 }
 
 .signin-google {
@@ -168,14 +167,14 @@ body {
     font-size: 1.1em;
 }
 
+/* 
 .signin-fb {
     background-color: #1877F2;
     font-size: 1.1em;
-}
+} */
 
-.signin-google:hover,
-.signin-fb:hover {
-    transform: translateY(-4px);
+.signin-google:hover {
+    transform: scale(1.03);
     outline: none;
 }
 
