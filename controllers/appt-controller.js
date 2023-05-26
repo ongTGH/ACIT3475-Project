@@ -48,7 +48,10 @@ const renderPetAppointments = (req, res, next) => {
     const user = req.user;
     const petId = req.params.petId;
     const pet = user.pets.find(pet => pet.id === petId);
-    const appointments = pet ? pet.appointments || [] : [];
+    const appointments = pet ? pet.appointments.map(appointment => ({
+        ...appointment,
+        petId: pet.id,
+    })) : [];
 
     res.render('appointments/pet-appointments', {
         bodyClass: 'normal',
@@ -59,6 +62,7 @@ const renderPetAppointments = (req, res, next) => {
         petId: petId,
     });
 };
+
 
 // Create a new appointment
 const createAppointment = (req, res, next) => {
