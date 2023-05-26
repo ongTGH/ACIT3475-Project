@@ -27,8 +27,21 @@ const convertTo12HourFormat = (time) => {
 // Render the appointments page
 const renderAppointments = (req, res, next) => {
     const user = req.user;
-    const appointments = user.appointments || [];
-    res.render('appointments/pet-appointments', { bodyClass: 'normal', appointments, activeLink: '', user: req.user });
+    let appointments = [];
+
+    user.pets.forEach(pet => {
+        const petAppointments = pet.appointments.map(appointment => ({
+            ...appointment,
+            petId: pet.id,
+        }));
+        appointments = appointments.concat(petAppointments);
+    });
+
+    if (appointments.length > 0) {
+        res.render('appointments/pet-appointments', { bodyClass: 'normal', appointments, activeLink: '', user: req.user });
+    } else {
+        res.render('appointments/pet-appointments', { bodyClass: 'normal', appointments: [], activeLink: '', user: req.user });
+    }
 };
 
 const renderPetAppointments = (req, res, next) => {

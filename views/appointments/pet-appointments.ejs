@@ -7,11 +7,12 @@
   <main class="appointment-container">
     <header class="messages">
       <div>
-        <% if (typeof petName !== 'undefined' && petName) { %>
-        <!-- <h1 class="welcome-msg">Welcome <%= user.name %>!</h1> -->
-        <h1 class="welcome-msg">Here are <%= petName %>'s appointments:</h1>
+        <% if (!user.pets || user.pets.length == 0) { %>
+        <h1 class="welcome-msg">You don't have any pets/appointments</h1>
+        <% } else if (typeof petName !== 'undefined' && petName) { %>
+        <h1 class="welcome-msg"><%= petName %>'s appointments:</h1>
         <% } else { %>
-        <h1 class="welcome-msg">Welcome <%= user.name %>!</h1>
+        <h1 class="welcome-msg">Welcome <%= user.name %>! Here are all your pet's appointments:</h1>
         <% } %>
       </div>
     </header>
@@ -24,13 +25,13 @@
           <p><%= appointment.date %></p>
         </div>
         <div class="appointment-item-body">
-          <p><%= appointment.desc %></p>
-          <p><%= appointment.time %></p>
+          <p>Desc: <%= appointment.desc %></p>
+          <p>Time: <%= appointment.time %></p>
           <p>Location: <%= appointment.location %></p>
           <p>Notes: <%= appointment.note %></p>
         </div>
         <div class="appointment-item-actions">
-          <%- include('../partials/action-btns', { appointmentId: appointment.id, petId: petId }) %>
+          <%- include('../partials/action-btns', { appointmentId: appointment.id, petId: appointment.petId }) %>
         </div>
       </div>
       <% }); %>
