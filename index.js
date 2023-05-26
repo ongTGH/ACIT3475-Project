@@ -19,6 +19,7 @@ const authRouter = require('./routes/auth-route');
 const homepageRouter = require('./routes/homepage-route');
 const apptRouter = require('./routes/appt-route');
 const petRouter = require('./routes/pet-route');
+const profileRouter = require('./routes/profile-route');
 
 // create express app
 const app = express();
@@ -54,6 +55,7 @@ app.use(homepageRouter);
 app.use(authRouter);
 app.use(apptRouter);
 app.use(petRouter);
+app.use(profileRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

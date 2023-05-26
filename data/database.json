@@ -1,9 +1,9 @@
 [
   {
     "id": "1684988726545",
-    "name": "Dummy user",
-    "email": "dummyuser@example.com",
-    "password": "$2b$10$hYQ0DEkxLeo3cchiSD82Z.NHypntdO7sQBX1z.Cg1/5.yk1BXWuCy",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "$2b$10$nkvw3tJwvOpIKzluoLeVf.3g6D.c9mHF7l359ulfMeKxtWLQoSiqG",
     "pets": [
       {
         "id": "1684989280694",
