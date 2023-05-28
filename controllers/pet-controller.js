@@ -192,4 +192,12 @@ const postEditPet = async (req, res, next) => {
     }
 };
 
-module.exports = { renderPetView, renderAddPetPage, postAddPet, renderPetDetailsPage, deletePet, renderEditPetPage, postEditPet };
+module.exports = {
+    renderPetView,
+    renderAddPetPage,
+    postAddPet,
+    renderPetDetailsPage,
+    deletePet,
+    renderEditPetPage,
+    postEditPet
+};

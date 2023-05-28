@@ -149,4 +149,12 @@ const deleteAppointment = (req, res, next) => {
 };
 
 
-module.exports = { renderAppointments, createAppointment, saveAppointment, renderPetAppointments, renderEditAppointment, updateAppointment, deleteAppointment };
+module.exports = {
+    renderAppointments,
+    createAppointment,
+    saveAppointment,
+    renderPetAppointments,
+    renderEditAppointment,
+    updateAppointment,
+    deleteAppointment
+};

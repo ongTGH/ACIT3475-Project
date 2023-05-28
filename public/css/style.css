@@ -108,7 +108,7 @@ body {
     background: var(--main-bg-color);
     border-radius: 15px;
     width: 30em;
-    height: 80vh;
+    height: 60vh;
     margin: 1em;
     box-shadow: var(--main-box-shadow);
 }
@@ -138,45 +138,6 @@ body {
     transform: translateY(-6px);
 }
 
-.signin-divider {
-    font-size: 1.3em;
-}
-
-/* google/facebook sign in styling */
-.social-signin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.social-signin a {
-    margin-bottom: 2em;
-    width: 18.5em;
-    padding: 1.2em 1.08em;
-    text-align: center;
-    border-radius: var(--btn-border-radius);
-    text-decoration: none;
-    color: var(--index-auth-btn-text);
-    box-shadow: var(--main-box-shadow);
-    color: var(--main-bg-color);
-    transition: 0.4s all ase-in-out;
-}
-
-.signin-google {
-    background-color: #DB4437;
-    font-size: 1.1em;
-}
-
-/* 
-.signin-fb {
-    background-color: #1877F2;
-    font-size: 1.1em;
-} */
-
-.signin-google:hover {
-    transform: scale(1.03);
-    outline: none;
-}
 
 /*! styling for appointment.html */
 /* appointment header/container styling */
@@ -270,11 +231,6 @@ body {
     align-items: flex-start;
     margin-bottom: 5px;
 }
-
-
-/* .appointment-item:last-child {
-    border-bottom: transparent 1px solid;
-} */
 
 .appointment-item-header {
     display: flex;
@@ -437,7 +393,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 1em; */
     grid-row: 2/3;
     grid-column: 2/3;
 }
@@ -501,7 +456,6 @@ body {
 .pet-item {
     background: var(--main-bg-color);
     padding-bottom: 1em;
-    /* height: 500px; */
 }
 
 .pet-item a {
@@ -732,7 +686,6 @@ textarea {
 
 .appointment-form-container textarea {
     resize: vertical;
-    /* height: 100px; */
 }
 
 .appointment-form-container .add-pet-btn {
@@ -885,12 +838,10 @@ select option {
     border-radius: 5px;
     font-size: 1em;
     background-color: #f2f2f2;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05); */
 }
 
 .profile-item input[type=submit] {
     background: #4CAF50;
-    /* green */
     color: white;
     cursor: pointer;
     width: 100%;
@@ -908,7 +859,6 @@ select option {
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
-    /* margin-top: 1em; */
     width: 100%;
     transition: all 0.2s ease-in-out;
 }

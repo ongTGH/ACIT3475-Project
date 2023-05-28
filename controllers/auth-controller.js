@@ -72,4 +72,10 @@ const logoutUser = (req, res) => {
 };
 
 
-module.exports = { createUser, logoutUser, signInUser, renderSignIn, renderSignUp };
+module.exports = {
+    createUser,
+    logoutUser,
+    signInUser,
+    renderSignIn,
+    renderSignUp
+};
