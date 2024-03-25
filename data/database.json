@@ -336,5 +336,12 @@
         ]
       }
     ]
+  },
+  {
+    "id": "1711343758842",
+    "name": "Bub",
+    "email": "bub@gmail.com",
+    "password": "$2b$10$a1jiYICMFqDk5WxHZMYz9OpfmIu2hAhh2M7i4sHtyWaCa1UEMqtFS",
+    "pets": []
   }
 ]
