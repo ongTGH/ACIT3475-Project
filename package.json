@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
-    "build": "mkdir -p dist && find . -path './dist' -prune -o -exec cp -r {} dist/ \\; && echo 'No build steps required for this project'"
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",
